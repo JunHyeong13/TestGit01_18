@@ -1,4 +1,4 @@
-﻿//C#의 분기분에 대해 알아보자! 
+﻿//C#의 분기분에 대해 알아보자!
 // using System;
 
 // namespace TestFile
@@ -69,7 +69,7 @@
 //     }
 // }
 
-// Switch case 문 _ 반복 분기문 
+// Switch case 문 _ 반복 분기문
 
 // using System;
 
@@ -105,13 +105,13 @@
 //                 case "토" :
 //                     Console.WriteLine("Saturday");
 //                     break;
-//             }   
+//             }
 //         }
 //     }
 // }
 
 
-// Switch문_ 식별자 문자 
+// Switch문_ 식별자 문자
 
 // using System;
 
@@ -149,7 +149,7 @@
 //     }
 // }
 
-//  Switch ~ Case 문에서 'When' 절을 활용한다면 어떻게 될까? 
+//  Switch ~ Case 문에서 'When' 절을 활용한다면 어떻게 될까?
 
 // using System;
 
@@ -161,14 +161,14 @@
 //         {
 //             object obj = null;
 //             string s = Console.ReadLine();
-            
+
 //             if(int.TryParse(s, out int out_i))
 //                 obj = out_i;
 //             else if(float.TryParse(s, out float out_f))
 //                 obj = out_f;
 //             else
-//                 obj = s; 
-                
+//                 obj = s;
+
 //             switch(obj)
 //             {
 //                 case int i when i > 0 :
@@ -185,7 +185,7 @@
 //     }
 // }
 
-// Switch 문_ 학점 계산기 
+// Switch 문_ 학점 계산기
 
 // using System;
 
@@ -197,7 +197,7 @@
 //         {
 //             Console.WriteLine("점수를 입력하세요! ");
 //             int score = Convert.ToInt32(Console.ReadLine());
-            
+
 //             Console.Write("재수강 인가요(Y/N) : ");
 //             string Line = Console.ReadLine();
 //             bool repeated = Line == "y"?true:false;
@@ -216,3 +216,133 @@
 //     }
 // }
 
+//While문 _ 분기문
+
+// using System;
+
+// namespace TestFile
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             int i = 10;
+//             while(i > 0)
+//             {
+//                 Console.WriteLine($"i : {i--}");
+//             }
+//         }
+//     }
+// }
+
+ //do ~ while
+
+//While문 _ 분기문
+
+// using System;
+
+// namespace TestFile
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             int i = 10;
+//             do
+//             {
+//                 Console.WriteLine("a) i : {0}", i--);
+//             }
+//             while (i > 0);
+
+//             do
+//             {
+//                 Console.WriteLine("b) i : {0}", i--);
+//             }
+//             while (i > 0);
+//         }
+//     }
+// }
+
+//for 문 활용법 
+
+// using System;
+
+// namespace TestFile
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             for(int i = 0; i < 5; i++)
+//             {
+//                 Console.WriteLine(i);
+//             }
+//         }
+//     }
+// }
+
+
+// 별 찍기 예제 
+
+// using System;
+
+// namespace TestFile
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             for(int i = 0; i < 5; i++)
+//             {
+//                 for(int j = 5; j > i; j--)
+//                 {
+//                     Console.Write("*");
+//                 }
+//                 Console.WriteLine();
+//             }
+//         }
+//     }
+// }
+
+// foreach 문은 배열이나 컬렉션을 취급하며, 컬렉션 안에 있는 수를 돌아가며서 출력해줌. 
+// using System;
+
+// namespace TestFile
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {      
+//             int[] arr = new int[]{0,1,2,3,4};
+//             foreach(int a in arr)
+//                 Console.WriteLine(a);
+//         }
+
+//     }
+// }
+
+// using System;
+
+// namespace TestFile
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             int i = 0;
+//             do
+//             {
+//                 int j = 0;
+//                 do
+//                 {
+//                     Console.Write("*");
+//                     j++;  
+//                 }
+//                 while(j<=i);
+//                 Console.WriteLine();
+//                 i++;
+//             }   
+//             while(i < 5);
+//         }
+//     }
+// }
