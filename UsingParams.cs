@@ -1,33 +1,33 @@
-using System;
+// using System;
 
-namespace Params
-{
-    class MainApp
-    {
-        static int Sum(params int[] args) // 가변 개수의 경우 params 키워드 && 배열을 활용
-        {
-            Console.Write("Summing...");
+// namespace Params
+// {
+//     class MainApp
+//     {
+//         static int Sum(params int[] args) // 가변 개수의 경우 params 키워드 && 배열을 활용
+//         {
+//             Console.Write("Summing...");
 
-            int sum = 0;
+//             int sum = 0;
 
-            for(int i = 0; i <args.Length; i++)
-            {
-                if (i > 0)
-                {
-                    Console.Write(", ");
-                }
-                Console.Write(args[i]);
+//             for(int i = 0; i <args.Length; i++)
+//             {
+//                 if (i > 0)
+//                 {
+//                     Console.Write(", ");
+//                 }
+//                 Console.Write(args[i]);
 
-                sum+=args[i];
-            }
-            Console.WriteLine();
+//                 sum+=args[i];
+//             }
+//             Console.WriteLine();
 
-            return sum;
-        }
-        static void Main(string[]args)
-        {
-            int sum = Sum(3,4,5,6,7,8,9,10);
-            Console.WriteLine($"Sum : {sum}"); 
-        }
-    }
-}
+//             return sum;
+//         }
+//         static void Main(string[]args)
+//         {
+//             int sum = Sum(3,4,5,6,7,8,9,10);
+//             Console.WriteLine($"Sum : {sum}"); 
+//         }
+//     }
+// }
